@@ -37,11 +37,11 @@ header {
   border: none;
 }
 
-.form-row input:hover,
+/* .form-row input:hover,
 .form-row input:active {
   opacity: 0.8;
   cursor: text;
-}
+} */
 
 .new-item-form .btn:hover,
 .new-item-form .btn:active {
@@ -68,4 +68,8 @@ li {
 .btn-danger {
   color: rgb(195, 43, 43);
   cursor: pointer;
+}
+
+input[type="checkbox"]:checked+label {
+  text-decoration: line-through;
 }

@@ -45,6 +45,7 @@ export default function App() {
     })
   }
 
+  console.log (todos);
   return (
     <>
       <header>
