@@ -16,7 +16,7 @@ export function NewTodoForm({ onSubmit }) {
    return (
         <form className='new-item-form' onSubmit={handleSubmit}>
             <div className="form-row">
-            <label htmlFor="item">New Item</label>
+            <label htmlFor="item">New Item</label><br/>
             <input type="text" name="item" id="item"
                 value={newItem}
                 onChange={e => setNewItem(e.target.value)}

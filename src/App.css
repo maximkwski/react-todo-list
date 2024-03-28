@@ -1,10 +1,71 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+.container {
+  max-width: 1280px;
+  width: 80%;
+  margin: 0 auto;
 }
 
-#root {
-  max-width: 1280px;
-  margin: 0;
+h1 {
+  margin-top: 0;
+}
+
+header {
+  padding: 2em 0;
+}
+
+.form-row input {
+  outline: none;
+  background-color: #2c5d63;
+  color: #e0e0e0;
+
+  padding: 0.2em;
+}
+
+.new-item-form .btn {
+  margin-top: 0.2em;
+  display: inline-block;
+  background-color: #a2c11c;
+  color: #2c5d63;
+
+}
+
+.new-item-form .btn,
+.form-row input {
+  font-family: Montserrat;
+  font-size: 1.3rem;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+}
+
+.form-row input:hover,
+.form-row input:active {
+  opacity: 0.8;
+  cursor: text;
+}
+
+.new-item-form .btn:hover,
+.new-item-form .btn:active {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  border: 1px solid #a2c11c;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 0.2em;
+  padding: 0.2em;
+}
+
+.btn-danger {
+  color: rgb(195, 43, 43);
+  cursor: pointer;
 }

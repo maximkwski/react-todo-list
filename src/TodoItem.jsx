@@ -1,3 +1,6 @@
+import Icon from '@mdi/react';
+import { mdiDeleteCircle } from '@mdi/js';
+
 export function TodoItem( { completed, id, title, toggleTodo, deleteTodo } ) {
     return (
         <li>
@@ -7,9 +10,9 @@ export function TodoItem( { completed, id, title, toggleTodo, deleteTodo } ) {
             />
             {title}
             </label>
-            <button 
-              onClick={() => deleteTodo(id)}
-            className="btn btn-danger">Delete</button>
+            <Icon path={mdiDeleteCircle} size={1} 
+             onClick={() => deleteTodo(id)}
+             className="btn btn-danger"/>
         </li>
     )
 }
