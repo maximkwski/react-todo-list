@@ -3,7 +3,7 @@ import { mdiDeleteCircle } from '@mdi/js';
 
 export function TodoItem( { completed, id, title, toggleTodo, deleteTodo } ) {
     return (
-        <li key={id}>
+        <li key={id} className={ completed ? 'completed' : undefined}>
              
             <label>
             

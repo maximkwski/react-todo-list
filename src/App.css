@@ -70,6 +70,6 @@ li {
   cursor: pointer;
 }
 
-input[type="checkbox"]:checked+label {
+.completed {
   text-decoration: line-through;
 }
