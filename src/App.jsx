@@ -46,16 +46,15 @@ export default function App() {
     })
   }
 
-  console.log (todos);
   return (
     <>
-      <header>
-        <div className="container row">
+      <header className="container">
+        <div className='header__content'>
           <NewTodoForm onSubmit={addTodo}/>
         </div>
       </header>
-      <main>
-        <div className="container row">
+      <main className="container">
+        <div className='main__content'>
           <h1>Todo List</h1>
           <TodoList todos={todos}
             toggleTodo={toggleTodo} deleteTodo={deleteTodo}
