@@ -28,7 +28,6 @@ export default function App() {
 
 
   function toggleTodo(id, completed) {
-    const todoItems = document.getElementsByTagName('li');
     setTodos(currentTodos => {
       return currentTodos.map(todo => {
         if(todo.id === id) {
